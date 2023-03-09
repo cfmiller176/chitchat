@@ -1,5 +1,8 @@
-import './App.css';
 import React from 'react';
+import TopicForm from './Components/TopicForm/TopicForm';
+import MessageList from './Components/MessageList/MessageList';
+import './App.css';
+
 
 class App2 extends React.Component {
   render() {
@@ -10,6 +13,11 @@ class App2 extends React.Component {
             Chit Chat App
           </p>
         </header>
+        <main>
+          <TopicForm />
+          <MessageList />
+        </main>
+        <footer></footer>
       </div>
     );
   }
