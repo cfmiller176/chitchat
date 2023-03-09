@@ -3,7 +3,7 @@ import TopicForm from './Components/TopicForm/TopicForm';
 import MessageList from './Components/MessageList/MessageList';
 import './App.css';
 
-
+/*
 class App2 extends React.Component {
   render() {
     return (
@@ -22,11 +22,11 @@ class App2 extends React.Component {
     );
   }
 }
+*/
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        
         <p>
           Chit Chat App 
         </p>
