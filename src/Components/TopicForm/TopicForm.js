@@ -2,18 +2,50 @@ import React from 'react';
 import './TopicForm.css';
 
 export default function TopicForm() {
+    const[name, setName]= React.useState('');
+    const[message, setMessage]= React.useState('');
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        addItem(name, message);
+        setName('');
+        setMessage('');
+    }
+
+    function handleNameChange(event) {
+        setName(event.target.value.);
+
+    }
+
+    function handleMessageChange(event) {
+        setMessage(event.target.value);
+
+
+    }
+
     return (
         <>
             <h4>Topic form </h4>
-            <form action="#" method="GET" className="form">
+            <form action="#" method="GET" className="form" onSubmit= {handleSubmit}>
                 <div className="form-row">
-                <label for="name-field"className="form-label">Name:</label>
-                <input id="name-field" type="text" name="name" required />
+                <label htmlFor="name-field"className="form-label">Name:</label>
+                <input 
+                id="name-field" 
+                type="text" 
+                name="name" 
+                value={name}
+                onChange={handleNameChange}
+                required />
                 
             </div>
             <div className="form-row">
-                <label for="message-field" className="form-label">Message:</label>
-                <textarea id="message-field" name="message" required></textarea>
+                <label htmlFor="message-field" className="form-label">Message:</label>
+                <textarea 
+                id="message-field" 
+                name="message" 
+                value={message}
+                onChange={handleMessageChange}
+                required></textarea>
                 
             </div>
             <div className="form-row">
