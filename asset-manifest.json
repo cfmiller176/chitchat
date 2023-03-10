@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/chitchat/static/css/main.65699265.css",
-    "main.js": "/chitchat/static/js/main.188b9308.js",
+    "main.css": "/chitchat/static/css/main.9d27e852.css",
+    "main.js": "/chitchat/static/js/main.a18ced24.js",
     "index.html": "/chitchat/index.html",
-    "main.65699265.css.map": "/chitchat/static/css/main.65699265.css.map",
-    "main.188b9308.js.map": "/chitchat/static/js/main.188b9308.js.map"
+    "main.9d27e852.css.map": "/chitchat/static/css/main.9d27e852.css.map",
+    "main.a18ced24.js.map": "/chitchat/static/js/main.a18ced24.js.map"
   },
   "entrypoints": [
-    "static/css/main.65699265.css",
-    "static/js/main.188b9308.js"
+    "static/css/main.9d27e852.css",
+    "static/js/main.a18ced24.js"
   ]
 }
