@@ -1,7 +1,7 @@
 import React from 'react';
 import './TopicForm.css';
 
-export default function TopicForm() {
+export default function TopicForm({addItem}) {
     const[name, setName]= React.useState('');
     const[message, setMessage]= React.useState('');
 
@@ -13,7 +13,7 @@ export default function TopicForm() {
     }
 
     function handleNameChange(event) {
-        setName(event.target.value.);
+        setName(event.target.value);
 
     }
 

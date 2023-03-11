@@ -18,7 +18,10 @@ function App() {
     }
   ]);
   function addItem(name, message) {
-    console.log('ADD ITEM',name, message);
+    console.log('ADD ITEM', name, message);
+    setMessages(oldMessages => {
+      const newMessages = structuredClone(oldMessages);
+    });
 
   }
 
@@ -30,7 +33,7 @@ function App() {
         </p>
       </header>
       <main>
-          <TopicForm />
+          <TopicForm addItem={addItem} />
           <MessageList messages={messages} />
         </main>
         <footer>Footer</footer>
