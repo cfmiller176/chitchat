@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function MessageList({messages}) {
     const messagesJsx= messages.map(messages => (
-        <li key ={message.id}><strong>{message.name}:</strong>{message.message}</li>
+        <li key ={messages.id}><strong>{messages.name}:</strong>{messages.messages}</li>
     ))
     return (
         <>

@@ -4,16 +4,16 @@ import MessageList from './Components/MessageList/MessageList';
 import './App.css';
 
 function App() {
-  const[messages, setMessages]= React.useState([
+  const [messages, setMessages]= React.useState([
     {
-      name: 'Player 1',
-      message: 'I am ready.',
+      name:  'Player 1',
+      messages:' I am ready.',
       id: 1
     },
 
     {
       name: 'Player 2',
-      message: 'I am not ready yet',
+      messages: ' I am not ready yet',
       id : 2
     }
   ]);
@@ -21,6 +21,13 @@ function App() {
     console.log('ADD ITEM', name, message);
     setMessages(oldMessages => {
       const newMessages = structuredClone(oldMessages);
+      newMessages.push({
+        name,
+        message,
+        id: new Date ().getTime()
+
+      });
+      return newMessages;
     });
 
   }
