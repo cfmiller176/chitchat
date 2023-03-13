@@ -7,7 +7,7 @@ function App() {
   const [messages, setMessages]= React.useState([
     {
       name:  'Player 1',
-      messages:' I am ready.',
+      messages:' I am ready. 👍',
       id: 1
     },
 
@@ -18,7 +18,6 @@ function App() {
     }
   ]);
   function addItem(name, message) {
-    console.log('ADD ITEM', name, message);
     setMessages(oldMessages => {
       const newMessages = structuredClone(oldMessages);
       newMessages.push({
