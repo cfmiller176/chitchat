@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/chitchat/static/css/main.a1b2ff30.css",
-    "main.js": "/chitchat/static/js/main.b11ee60d.js",
+    "main.css": "/chitchat/static/css/main.4824d7ca.css",
+    "main.js": "/chitchat/static/js/main.3a5c5ce3.js",
+    "static/media/ThumbsUpEmpty.svg": "/chitchat/static/media/ThumbsUpEmpty.97f3df94e6d2a4e529c8ee89d7f24fc9.svg",
+    "static/media/ThumbsUpFull.svg": "/chitchat/static/media/ThumbsUpFull.8b7923c2580ce13feaea179429da4748.svg",
     "index.html": "/chitchat/index.html",
-    "main.a1b2ff30.css.map": "/chitchat/static/css/main.a1b2ff30.css.map",
-    "main.b11ee60d.js.map": "/chitchat/static/js/main.b11ee60d.js.map"
+    "main.4824d7ca.css.map": "/chitchat/static/css/main.4824d7ca.css.map",
+    "main.3a5c5ce3.js.map": "/chitchat/static/js/main.3a5c5ce3.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1b2ff30.css",
-    "static/js/main.b11ee60d.js"
+    "static/css/main.4824d7ca.css",
+    "static/js/main.3a5c5ce3.js"
   ]
 }
