@@ -7,13 +7,15 @@ function App() {
   const [messages, setMessages]= React.useState([
     {
       name:  'Player 1',
-      messages:' I am ready. 👍',
+      messages:' I am ready.',
+      liked: false,
       id: 1
     },
 
     {
       name: 'Player 2',
       messages: ' I am not ready yet',
+      liked: false,
       id : 2
     }
   ]);
@@ -23,13 +25,22 @@ function App() {
       newMessages.push({
         name,
         message,
+        liked: false,
         id: new Date ().getTime()
 
       });
       return newMessages;
     });
-
   }
+
+    function toggleLike (id) {
+      setMessages(oldMessages => {
+        const newMessages = structuredClone(oldMessages);
+        const toggledItem = newMessages.find(message => message.id === id);
+        toggledItem.liked = !toggledItem.liked;
+        return newMessages;
+      });
+    }
 
   return (
     <div className="App">
@@ -40,7 +51,7 @@ function App() {
       </header>
       <main>
           <TopicForm addItem={addItem} />
-          <MessageList messages={messages} />
+          <MessageList messages={messages} toggleLike={toggleLike} />
         </main>
         <footer>Footer</footer>
     </div>

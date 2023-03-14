@@ -5,7 +5,7 @@ import './MessageList.css';
 export default function MessageList({messages, toggleLike}) {
     
     const messagesJsx= messages.map(messages =>
-        <MessageItem message={message} key={message.id} toggleLike={toggleLike} />);
+        <Messageitem message={messages} key={messages.id} toggleLike={toggleLike} />);
        return (
         <>
             <h4>Message List</h4>
